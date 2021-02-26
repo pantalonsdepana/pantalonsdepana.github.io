@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="cat">
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-R5MYRQHS8K"></script>
@@ -11,8 +11,11 @@
   gtag('config', 'G-R5MYRQHS8K');
 </script>
 <meta charset="utf-8">
- <title>Pantalons de Pana Music</title>
- <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pantalons de Pana</title>
+<link rel = "icon" href =  
+"https://drive.google.com/thumbnail?id=1FNlEhzgLxP729RjvCrh1bZFAD6NVqpw9" 
+     type = "image/x-icon"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
  <meta charset="utf-8">
@@ -45,29 +48,15 @@
     display: flex;
   }
   
-  /* Style the navigation menu */
-  nav {
-    -webkit-flex: 0.5;
-    -ms-flex: 0.5;
-    flex: 0.5;
-    background: #ccc;
-    padding: 20px;
-  }
-  
-  /* Style the list inside the menu */
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
   /* Style the content */
-  article {
-    -webkit-flex: 3;
-    -ms-flex: 3;
-    flex: 3;
-    background-color: #f1f1f1;
-    padding: 10px;
-  }
+  .principal {
+      -webkit-flex: 3;
+      -ms-flex: 3;
+      flex: 3;
+      background-color: #f1f1f1;
+      padding: 10px;
+      align-items: center;
+    }
   
   /* Style the footer */
   footer {
@@ -84,9 +73,10 @@
       flex-direction: column;
     }
   }
-.fa{
-          color: black;
-      }
+  .navbar-text {
+    text-align: right;
+  }
+
 
 </style>
 </head>
@@ -94,50 +84,70 @@
 <div class="jumbotron text-center jumbotron-fluid" style="margin-bottom:0; font-size: 90px">
   <div class=".container-fluid">
     <div class=".container-fluid">
-      <h1 class="display-4" href="https://pantalonsdepana.github.io/" style="color: white;">Pantalons de Pana</h1>
+      <h1 class="display-4" href="https://pantalonsdepana.github.io/" style="color: white;">Música</h1>
     </div>
   </div>
 </div>
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
-<a class="navbar-brand" href="https://pantalonsdepana.github.io/"><img src="logo.png" alt="Logo" style="width:40px;"></a>
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-  <span class="navbar-toggler-icon"></span>
-</button>
-<div class="collapse navbar-collapse" id="collapsibleNavbar">
-  <ul class="navbar-nav">
-    <li class="nav-item">
-      <a class="nav-link" href="https://pantalonsdepana.github.io/">Inici</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="musica.html">Música</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="Qui_som.html">Qui Som?</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link fa fa-instagram" href="https://www.instagram.com/pantalonsdepana/" target="_self" ></a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link fa fa-youtube-play" href="https://www.youtube.com/channel/UC3LRiXS0HDIkMlGlWU5J5Xg" target="_self"></a>
-    </li>
-  </ul>
-</div>  
+  <div class="row container-fluid">
+    <div class="col" style="align-items: center;text-align:left;">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".collapsibleNavbar">
+        <span class="fa fa-navicon	"></span>
+      </button>
+      <div class="collapse navbar-collapse collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="https://pantalonsdepana.github.io/">Inici</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="musica.html">Música</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Qui_som.html">Qui Som?</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col " style="align-items: center;text-align: center;">
+    <a class="navbar-brand" href="https://pantalonsdepana.github.io/"><img src="https://drive.google.com/thumbnail?id=1FNlEhzgLxP729RjvCrh1bZFAD6NVqpw9" alt="Logo" style="width:40px;"></a>
+    </div>
+    <div class="col " style="align-items: center;text-align: right;">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".collapsibleNavba">
+        <span class="fa fa-share-alt"></span>
+      </button>
+      <div class="collapse navbar-collapse collapsibleNavba navbar-text" style="align-items: center;text-align: right;">
+        <ul class="navbar-nav"  style="text-align: right;">
+          <li class="nav-item "style="text-align: right;">
+            <a class="nav-link" href="Contacte.html">Contacte</a>
+          </li>
+          <li class="nav-item"  style="text-align: right;">
+            <a class="nav-link fa fa-instagram" href="https://www.instagram.com/pantalonsdepana/" target="_self" ></a>
+          </li>
+          <li class="nav-item"  style="text-align: right;">
+            <a class="nav-link fa fa-youtube-play" href="https://www.youtube.com/channel/UC3LRiXS0HDIkMlGlWU5J5Xg" target="_self"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </nav>
-  <article>
+<div class="col text-center principal">
       <h2>Covers</h2>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/PLwgL5KpnseyD81alOSy3iOeN4DYl9vogh" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/PLwgL5KpnseyD81alOSy3iOeN4DYl9vogh" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="embed-responsive-item"></iframe>
       <p style='color : blueviolet'> Pantalons de Pana</p>
-    </article>
-</section>
-  <footer>
+  </article>
+</div>
+<div class="jumbotron text-center jumbotron-fluid" style="margin-bottom:0">
+  <div class="container-fluid">
     <hr>
     <address>
       Pantalons de Pana una pàgian web desarrotllda per Pau Gómez
     </address>
     <p>
-      Ultima modificació 19/12/2020
+      Ultima modificació 21/12/2020
     </p>
-  </footer>
+  </div>
+</div>
 </body>
 
 </html>
