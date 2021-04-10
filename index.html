@@ -10,6 +10,7 @@
 
     gtag('config', 'G-R5MYRQHS8K');
   </script>
+  
   <meta charset="utf-8">
    <title>Pantalons de Pana</title>
    <link rel = "icon" href =  
@@ -24,15 +25,38 @@
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   <script src="easy_background.js"></script>
+
    <style>
     * {
       box-sizing: border-box;
     }
+    html {
+    		height: 100%;
+    	}
     
+    section {
+    	display: none;
+    }
     body {
       font-family: Arial, Helvetica, sans-serif;
-    }
-    
+      -webkit-transition: all 0.5s ease-in;
+      -moz-transition: all 0.5s ease-in;
+      -ms-transition: all 0.5s ease-in;
+      -o-transition: all 0.5s ease-in;
+      transition: all 0.5s ease-in;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      color: white;
+      height: 100%;
+      position: relative;
+      
+      margin: 0 auto;
+      
+      
+      }    
     /* Style the header */
     .jumbotron {
       background-color: #666;
@@ -68,7 +92,7 @@
       -ms-flex: 3;
       flex: 3;
       background-color: #f1f1f1;
-      padding: 10px;
+      
       align-items: center;
     }
     
@@ -90,10 +114,11 @@
         flex-direction: column;
       }
     }
-
+    
   </style>
+  
  </head>
-<link rel="stylesheet" href="estilo.css">
+
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
   <div class="row container-fluid">
     <div class="col text-left" style="align-items: center;text-align:left;">
@@ -143,44 +168,21 @@
     </div>
   </div>
 </nav>
-<div class="col text-center principal">
-      <div id="carrusel" class="carousel slide " data-ride="carousel">
+<body>
+<script>
+  easy_background("body",
 
-        <!-- Indicators -->
-        <ul class="carousel-indicators">
-          <li data-target="#carrusel" data-slide-to="0" class="active"></li>
-          <li data-target="#carrusel" data-slide-to="1"></li>
-          <li data-target="#carrusel" data-slide-to="2"></li>
-        </ul>
-      
-        <!-- The slideshow -->
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="embed-responsive" src="WhatsApp Image 2021-01-19 at 7.10.57 PM (12).jpeg"  alt="Nosaltres">
-          </div>
-          <div class="carousel-item">
-            <img class="embed-responsive" src="WhatsApp Image 2021-01-19 at 7.10.57 PM (14).jpeg" alt="assajant">
-          </div>
-          <div class="carousel-item">
-            <img class="embed-responsive" src="WhatsApp Image 2021-01-19 at 7.10.57 PM (10).jpeg" alt="fotitoo">
-          </div>
-        </div>
-      </div>
+    {
+      slide: ["img/1.jpeg", "img/2.jpg", "img/3.jpg", "img/4.jpg", "img/5.jpg"],
 
-    
-  
-</div>
-<div class="jumbotron text-center jumbotron-fluid" style="margin-bottom:0">
-  <div class="container-fluid">
-    <hr>
-    <address>
-      Pantalons de Pana una pàgian web desevolupada per Pau Gómez
-    </address>
-    <p>
-      Ultima modificació 03/4/2021
-    </p>
-  </div>
-</div>
+      delay: [2000, 2000, 2000, 2000, 2000]
+    }
+
+
+  );
+</script>
+
+
 </body>
 
 </html>
